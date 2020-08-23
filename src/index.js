@@ -2,30 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {  BrowserRouter as Router, Switch,  Route } from "react-router-dom";
 import {Provider} from 'react-redux';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
-import Header from './components/header/index';
-import Footer from './components/footer/index';
-import Home from './containers/Home';
-import Timer from './containers/Timer';
- import store from './store';
-import {Global} from './styles/';
-            
+import store from './store';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './containers/home';
+import {Global} from './globalStyle';
+import 'bootstrap/dist/css/bootstrap.min.css';    
+
 ReactDOM.render(
     <Provider  store={store}>
         <React.StrictMode>
             <Global/>
-            <Header title="NOtes"/>
+            <Header title="Message List"/>
             <Router>
                 <Switch>
                     <Route exact path="/" component = {Home} >
-                    </Route>
-                    <Route exact path="/timer" component = {Timer}>
-                    </Route>                 
+                    </Route>       
                 </Switch>
             </Router>
             <Footer>
-                <p>some footer</p>
+                <p> footer</p>
             </Footer>
         </React.StrictMode>
   </Provider>,
