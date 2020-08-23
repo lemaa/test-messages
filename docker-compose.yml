@@ -1,6 +1,6 @@
 version: "3"
 services:
-  front_app_noty:
+  front_app_test_message:
     restart: always
     build: .
     stdin_open: true
