@@ -10,6 +10,8 @@ Install all the npm packages. Go into the project folder and type the following 
 npm install
 ```
 
+Rename the .env.dev file to .env 
+
 In order to run the application Type the following command
 
 ```bash
