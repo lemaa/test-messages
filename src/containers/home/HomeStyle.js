@@ -18,9 +18,7 @@ const MessageSection = styled(Row)`
 
 `;
 const FormSection = styled(Row)`
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+
 `;
 export { 
     MainContainer, 
