@@ -1,1 +1,1 @@
-export const MESSAGE_ENDPOINT = 'http://192.168.99.104:9090/message';
+export const MESSAGE_ENDPOINT =  process.env.REACT_APP_MESSAGE_ENDPOINT;
